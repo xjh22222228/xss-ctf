@@ -1,0 +1,19 @@
+<% include header %>
+<script>
+window.alert = function() {
+  confirm("完成的不错！");
+  window.location.href="level14"; 
+}
+</script>
+<h1>欢迎来到level13</h1>
+<h2>没有找到和<%- xss %>相关的结果.</h2>
+<form id=search>
+  <input name="t_link"  value="" type="hidden">
+  <input name="t_history"  value="" type="hidden">
+  <input name="t_sort"  value="<%= t_sort %>" type="hidden">
+  <input name="t_cook"  value="<%- str3 %>" type="hidden">
+</form>
+<img src=level13.png>
+<h3>payload的长度:<%- keyword.length %></h3></body>
+</html>
+<% include footer %>

@@ -1,0 +1,17 @@
+<% include header %>
+<script>
+window.alert = function() {     
+  confirm("恭喜您，全部通关！");
+  window.location.href = 'good'; 
+}
+</script>
+<h1>欢迎来到level16</h1>
+<div>
+  <%- str %>
+</div>
+<div>
+  <img src=level16.png>
+</div>
+<h3>payload的长度:<%- keyword.length %></h3>
+
+<% include footer %>

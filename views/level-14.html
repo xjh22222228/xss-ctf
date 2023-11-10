@@ -1,0 +1,17 @@
+<% include header %>
+<html>
+<script>
+window.alert = function() {
+  confirm("完成的不错！");
+  window.location.href="level15?keyword=test"; 
+}
+</script>
+<div id="app">
+  <h1>欢迎来到第15关，自己想个办法走出去吧！</h1>
+  <p>
+    <img src=level15.png />
+  </p>
+  <span class="v-text: <%- src%>"></span>
+</div>
+
+<% include footer %>

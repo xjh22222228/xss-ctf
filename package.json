@@ -1,0 +1,23 @@
+{
+  "name": "xss-ctf",
+  "version": "1.0.0",
+  "description": "xss-ctf",
+  "author": "xiejiahe",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "xss",
+    "xss-ctf"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-ejs": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static-server": "^1.4.0",
+    "xss": "^1.0.6"
+  }
+}

@@ -1,0 +1,19 @@
+<% include header %>
+<script>
+window.alert = function() {
+  confirm("完成的不错！");
+  window.location.href="level9?keyword=not bad!"; 
+}
+</script>
+<h1>欢迎来到level8</h1>
+<form action=level8 method=GET>
+  <input name=keyword  value="<%- xss %>">
+  <input type=submit name=submit value=添加友情链接 />
+</form>
+<br>
+<div>
+  <a href="<%- keyword %>">友情链接</a>
+</div>
+<img src=level8.jpg>
+<h3>payload的长度:<%- keyword.length %></h3>
+<% include footer %>

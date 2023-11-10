@@ -1,0 +1,17 @@
+<% include header %>
+<script>
+window.alert = function() {     
+  confirm("完成的不错！");
+  window.location.href="level5?keyword=find a way out!"; 
+}
+</script>
+<h1>欢迎来到level4</h1>
+<h2>没有找到和<%- xss %>相关的结果.</h2>
+<form action=level4 method=GET>
+  <input name=keyword  value="<%- keyword %>">
+  <input type=submit name=submit value=搜索 />
+</form>
+<img src=level4.png>
+<h3>payload的长度:<%= keyword.length %></h3>
+<% include footer %>
+    

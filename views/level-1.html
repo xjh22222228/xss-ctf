@@ -1,0 +1,12 @@
+<% include header %>
+<script>
+window.alert = function() {
+  window.confirm("完成的不错！");
+  window.location.href="level2?keyword=test"; 
+}
+</script>
+<h1>欢迎来到level1</h1>
+<h2>欢迎用户<%- name %></h2>
+<img src=level1.png>
+<h3>payload的长度:<%- name.length %></h3>
+<% include footer %>
